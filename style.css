@@ -1,0 +1,236 @@
+/*layout for mobile*/
+
+/*navbar*/
+.navbar {background-color: transparent;}
+
+.navbar, h3 {font-family: 'Viga', sans-serif;
+			 background-color: #69d0e3;
+}
+
+
+/*jumbotron*/
+
+.jumbotron {background-image: url(img/backgroundforjumbo.jpg);
+			background-size: cover;
+			background-attachment: fixed;
+			}
+
+.jumbotron .container {
+	z-index: 1;
+	position: relative;
+}
+
+.jumbotron::after {
+
+	content: '';
+	display: block;
+	width: 100%;
+	min-height: 450px;
+	background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)) ;
+	position: absolute;
+	top: 0;
+}
+
+.jumbotron h1 { text-shadow: 1px 1px 10px rgba(0,0,0,1);
+				font-size: 40px;
+				color: #69d0e3;
+				font-family: 'Pacifico', cursive;}
+
+.jumbotron .slogan { text-shadow: 1px 1px 10px rgba(0,0,0,1;);
+				font-size: 30px;
+				color: #69d0e3;
+				font-family: 'Pacifico', cursive;}
+
+/*about*/
+
+.about h2 { background-color:#69d0e3;
+			height: 50px;
+			text-align: center;
+			margin: auto;
+			box-shadow:1px 1px 10px rgba(0,0,0,1) }
+
+.about .col {margin-top: 40px;}
+
+
+/*history*/
+
+.history h2 { background-color:#69d0e3;
+			height: 50px;
+			text-align: center;
+			margin: auto;
+			box-shadow:1px 1px 10px rgba(0,0,0,1) }
+
+/*portofolio*/
+
+
+.portofolio .card { padding-bottom: 20px;
+					margin-left: -35px; }
+
+.portofolio h2 { background-color:#69d0e3;
+			height: 50px;
+			text-align: center;
+			margin: auto;
+			box-shadow:1px 1px 10px rgba(0,0,0,1) }
+
+/*footer*/
+.footer { background-color: #69d0e3;
+		  margin: auto;
+		  padding-top: 5px;
+		  text-align: center;
+		  margin-top: 10px;}
+
+
+
+
+
+
+
+
+
+/*layout for desktop*/
+
+@media (min-width: 992px) { 
+
+/*navbar*/
+.navbar {
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	background-color:#69d0e3 ;
+}
+
+.navbar, h3 {font-family: 'Viga', sans-serif;}
+
+
+.nav-item:hover::after { 
+			content: '';
+			display: block;
+			border-bottom: 3px solid white;
+			width: 50%;
+			margin: auto; }
+
+
+
+/*jumbotron*/
+
+.jumbotron { background-image: url(img/outsideetihadstadium2018.jpg);
+			 font-family: bold;
+			 width: 100%;
+			 min-height: 450px;
+			 background-size: cover;
+			 background-position: 0 -150px;
+			 background-attachment: fixed;
+			 
+
+
+
+}
+
+.jumbotron h1 { text-shadow: 1px 1px 10px rgba(0,0,0,1);
+				font-size: 100px;}
+
+.jumbotron .club {opacity: 0;
+				transform: translate(-100px, 0);
+			 }
+
+.jumbotron .club.animasi { opacity: 1;
+					   transition: 1s;
+					   transform: translate(0,0);	}
+
+.jumbotron .slogan {opacity: 0;
+				transform: translate(100px, 0);
+			 }
+
+.jumbotron .slogan.animasi { opacity: 1;
+					   transition: 1s;
+					   transform: translate(0,0);	}
+
+
+/*about*/
+
+.about h2 {text-transform: uppercase;}
+
+.about {min-height: 650px;}
+
+.about p {text-indent: 30px;}
+
+.about .texa {opacity: 0;
+				transform: translate(-100px, 0);
+			 }
+
+.about .texa.animate { opacity: 1;
+					   transition: 1s;
+					   transform: translate(0,0);	}
+
+.about .gambar {opacity: 0;
+				transform: translate(100px, 0);
+			 }
+
+.about .gambar.animate { opacity: 1;
+					   transition: 1s;
+					   transform: translate(0,0);	}
+
+/*history*/
+
+.history h2 {text-transform: uppercase;}
+
+.history {min-height: 650px;}
+
+.history p {text-indent: 30px;}
+
+.history .tex1 {opacity: 0;
+				transform: translate(-100px, 0);
+			 }
+
+.history .tex1.anime { opacity: 1;
+					   transition: 1s;
+					   transform: translate(0,0);	}
+
+.history .tex2 {opacity: 0;
+				transform: translate(100px, 0);
+			 }
+
+.history .tex2.anime { opacity: 1;
+					   transition: 1s;
+					   transform: translate(0,0);	}
+
+
+/*fix*/
+
+.fix {background-image: url(img/fix1.jpg);
+	  width: 100%;
+	  min-height: 500px;
+	  background-size: cover;
+	  background-attachment: fixed;}
+
+
+/*portofolio*/
+
+.portofolio {min-height: 800px;}
+
+.portofolio img {margin-bottom: 20px;}
+
+.portofolio .card { opacity: 0;
+					transform: translate(0, 50px);}
+
+.portofolio .card.animasi {  opacity: 1;
+							transition: 0.5s;
+							transform: translate(0,0);
+							margin-left: 10px;}
+
+.portofolio h2 {text-transform: uppercase;}
+
+
+/*footer*/
+.footer { background-color: #69d0e3;
+		  min-height:40px;
+		  margin: auto;
+		  padding-top: 5px;
+		  text-align: center;}
+
+
+
+
+
+
+}
+
