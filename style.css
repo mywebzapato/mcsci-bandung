@@ -10,35 +10,19 @@
 
 /*jumbotron*/
 
-.jumbotron {background-image: url(img/backgroundforjumbo.jpg);
-			background-size: cover;
-			background-attachment: fixed;
-			}
-
-.jumbotron .container {
-	z-index: 1;
-	position: relative;
-}
-
-.jumbotron::after {
-
-	content: '';
-	display: block;
-	width: 100%;
-	min-height: 450px;
-	background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0)) ;
-	position: absolute;
-	top: 0;
-}
+.jumbotron {background-image: url(img/background123.jpg);
+			width: 100%;
+			background-position: -80px 25px;
+			background-size: cover;}
 
 .jumbotron h1 { text-shadow: 1px 1px 10px rgba(0,0,0,1);
 				font-size: 40px;
-				color: #69d0e3;
+				color: yellow;
 				font-family: 'Pacifico', cursive;}
 
-.jumbotron .slogan { text-shadow: 1px 1px 10px rgba(0,0,0,1;);
-				font-size: 30px;
-				color: #69d0e3;
+.jumbotron h2 { text-shadow: 1px 1px 10px rgba(0,0,0,1;);
+				font-size: 25px;
+				color: yellow;
 				font-family: 'Pacifico', cursive;}
 
 /*about*/
@@ -126,7 +110,12 @@
 }
 
 .jumbotron h1 { text-shadow: 1px 1px 10px rgba(0,0,0,1);
+				color:  #69d0e3;
 				font-size: 100px;}
+
+.jumbotron h2 { text-shadow: 1px 1px 10px rgba(0,0,0,1);
+				color:  #69d0e3;
+				font-size: 80px;}
 
 .jumbotron .club {opacity: 0;
 				transform: translate(-100px, 0);
